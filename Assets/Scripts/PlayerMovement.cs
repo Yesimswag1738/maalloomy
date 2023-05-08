@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class PlayerMovement : MonoBehaviour
 {
     public float slideForceMultiplier = 1.0f;
@@ -20,6 +18,13 @@ public class PlayerMovement : MonoBehaviour
     private float slideTimer = 1f;
     public float gravity = -20f;
     // PUBLIC ANIM RUN;
+
+    public bool AR;
+    bool SR;
+    bool DR;
+    bool WR;
+
+   public GameObject maloonnnnn;
     
     //Vector3 velocity;
 
@@ -44,6 +49,50 @@ public class PlayerMovement : MonoBehaviour
             speed = 2f;
         }
         rb.MovePosition(rb.position + transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
+
+        //rotates
+        if (Input.GetKeyDown("a") && !AR)
+        {
+            maloonnnnn.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            AR = true;
+            SR = false;
+            DR = false;
+            WR = false;
+        }
+
+        if (Input.GetKeyDown("w") && !WR)
+        {
+            maloonnnnn.transform.rotation = Quaternion.Euler(0f, -90f, 0f);
+            AR = false;
+            SR = false;
+            DR = false;
+            WR = true;
+        }
+        
+        if (Input.GetKeyDown("s") && !SR)
+        {
+            maloonnnnn.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+            AR = false;
+            SR = true;
+            DR = false;
+            WR = false;
+        }
+        
+        if (Input.GetKeyDown("d") && !DR)
+        {
+            maloonnnnn.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            AR = false;
+            SR = false;
+            DR = true;
+            WR = false;
+        }
+        
+           
+        
+            
+            
+        
+
         
         // Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -51,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
             //velocity.y += gravity * Time.deltaTime;
-            //Physics.gravity = new Vector3(0, -90.0F, 0);
+           
         }
       
 
@@ -83,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Physics.gravity = new Vector3(0, -9.0F, 0);
+            Physics.gravity = new Vector3(0, -10F, 0);
         }
 
         
@@ -97,4 +146,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
         }
     }
+
+    
 }
