@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Des3.unity
     guid: 3048b3790716cab4eaeb76e01015ef8c
+  - enabled: 1
+    path: Assets/Scenes/Des4 + Oly1.unity
+    guid: c6c196976573f0d4497ac868f142f49e
+  - enabled: 1
+    path: Assets/Scenes/Oly2.unity
+    guid: 6404d4e968f6d2c488b141b72e155d58
   m_configObjects: {}
