@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gra3 + Des1.unity
     guid: 94e3f8a94859ce040992b29cfc6b7ec1
+  - enabled: 1
+    path: Assets/Scenes/Des2.unity
+    guid: 4d4414788bab4eb4c812d0e33a7e7ed4
+  - enabled: 1
+    path: Assets/Scenes/Des3.unity
+    guid: 3048b3790716cab4eaeb76e01015ef8c
   m_configObjects: {}
