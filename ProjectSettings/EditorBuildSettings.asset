@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gra1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Gra2.unity
+    guid: 91e6c0395ddb1264988436601d41ace9
+  - enabled: 1
+    path: Assets/Scenes/Gra3 + Des1.unity
+    guid: 94e3f8a94859ce040992b29cfc6b7ec1
   m_configObjects: {}
