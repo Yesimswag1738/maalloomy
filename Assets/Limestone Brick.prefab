@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7834394164989037733}
   m_Layer: 0
   m_Name: Limestone Brick
-  m_TagString: Untagged
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
