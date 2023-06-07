@@ -8,6 +8,6 @@ public class LS1 : MonoBehaviour
 {
     void OnCollisionEnter(Collision coll)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

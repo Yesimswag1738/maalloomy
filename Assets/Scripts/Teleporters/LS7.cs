@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class LS0 : MonoBehaviour
+public class LS7 : MonoBehaviour
 {
     void OnCollisionEnter(Collision coll)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(7);
     }
 }

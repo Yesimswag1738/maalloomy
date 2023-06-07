@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         // Move player
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+        Vector3 moveDirection = new  Vector3(horizontalInput, 0f, verticalInput).normalized;
         float speed = moveSpeed;
         if (Input.GetKey(sprintKey))
         {
