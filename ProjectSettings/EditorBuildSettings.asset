@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Oly2.unity
     guid: 6404d4e968f6d2c488b141b72e155d58
+  - enabled: 1
+    path: Assets/Scenes/Oly3.unity
+    guid: de8d76a30dd17fb44998d4756ca28f46
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 74eddb3e11e83754794dc47ee05063ac
   m_configObjects: {}
